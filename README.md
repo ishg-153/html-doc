@@ -8,5 +8,4 @@ Check it out here: https://html-doc.vercel.app/
 
 
 PS-
-
 It lacks colour. I know!
