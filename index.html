@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Babish Cookware</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no">
+      
+    <link rel=stylesheet type="text/css" href="style.css">  
+  </head>
+  
+  <body>
+    <nav id="navbar">
+  <header>
+    <h1>HTML Documentation</h1>
+  </header>
+
+  <ul>
+    <li><a href="#intro" class="nav-link">Introduction</l></li>
+    <li><a href="#heading" class="nav-link">Headings</a></li>
+    <li><a href="#display" class="nav-link">Displaying Text</a></li>
+    <li><a href="#list" class="nav-link">Lists</a>
+    <li><a href="#style" class="nav-link">Basic styling</a></li>
+  </ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section">
+    <header id="intro"><h2>Introduction</h2></header>
+    
+    <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. "Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
+    
+    <p>HTML uses "markup" to annotate text, images, and other content for display in a Web browser. An HTML element is set off from other text in a document by "tags", which consist of the element name surrounded by "<" and ">". The name of an element inside a tag is case insensitive. That is, it can be written in uppercase, lowercase, or a mixture. For example, the &lt;title&gt; tag can be written as &lt;Title&gt;, &lt;TITLE&gt;, or in any other way.</p>
+  </section>
+  
+  <section class="main-section">
+    <header id="heading"><h2>Headings</h2></header>
+    
+    <p>Avoid skipping heading levels: always start from &lt;h1>, followed by &lt;h2> and so on.
+Use only one &lt;h1> per page or view. It should concisely describe the overall purpose of the content.</p>
+    
+    <header><h3>Example-</h3></header>
+    <code class="language-html">
+      &lt;h1>Heading level 1&lt;/h1><br>
+      &lt;h2>Heading level 2&lt;/h2><br>
+      &lt;h3>Heading level 3&lt;/h3><br>
+      &lt;h4>Heading level 4&lt;/h4><br>
+      &lt;h5>Heading level 5&lt;/h5><br>
+      &lt;h6>Heading level 6&lt;/h6><br>
+    </code>
+    
+    <div class="result">
+      <h1>Heading level 1</h1>
+      <h2>Heading level 2</h2>
+      <h3>Heading level 3</h3>
+      <h4>Heading level 4</h4>
+      <h5>Heading level 5</h5>
+      <h6>Heading level 6</h6></div>
+  </section>
+  
+  <section class="main-section">
+    <header id="display"><h2>Displaying Text</h2></header>
+    
+    <p>The &lt;p> represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.
+Paragraphs are block-level elements, and notably will automatically close if another block-level element is parsed before the closing &lt;/p> tag.</p>
+    
+    <header><h3>Example-</h3></header>
+    <code class="language-html">
+      &lt;p>This is a paragraph.&lt;/p>
+    </code>
+    
+    <div class="result">
+      <p>This is a paragraph.</p>
+    </div>
+  
+  <section class="main-section">
+    <header id="list"><h2>Lists</h2></header>
+    
+    <p>The &lt;ul> and &lt;ol> elements may be nested as deeply as desired. Moreover, the nested lists may alternate between &lt;ol> and &lt;ul> without restriction.
+The &lt;ol> and &lt;ul> elements both represent a list of items. They differ in that, with the &lt;ol> element, the order is meaningful. As a rule of thumb to determine which one to use, try changing the order of the list items; if the meaning is changed, the &lt;ol> element should be used, otherwise you can use &lt;ul>.</p>
+    
+    <header><h3>Examples-</h3></header>
+    <code class="language-html">
+      &lt;ul><br>
+        &lt;li>first item&lt;/li><br>
+        &lt;li>second item&lt;/li><br>
+        &lt;li>third item&lt;/li><br>
+      &lt;/ul>
+    </code>
+    
+    <div class="result">
+      <ul>
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+      </ul>
+     </div>
+    
+    <code class="language-html">
+      &lt;ol><br>
+        &lt;li>Fee&lt;/li><br>
+        &lt;li>Fo&lt;/li><br>
+        &lt;li>Fum&lt;/li><br>
+      &lt;/ol>
+    </code>
+    
+    <div class="result">
+      <ul>
+        <li>Fee</li>
+        <li>Fo</li>
+        <li>Fum</li>
+      </ul>
+     </div>
+  </section>
+  
+  <section class="main-section">
+    <header id="style"><h2>Baisc Styling</h2></header>
+    
+    <header><h3>emphasize</h3></header>
+    <p>The &lt;em> element is for words that have a stressed emphasis compared to surrounding text, which is often limited to a word or words of a sentence and affects the meaning of the sentence itself.Typically this element is displayed in italic type. But it is different from using CSS style rule to make italic.</p>
+    
+    <header><h3>strong</h3></header> 
+    <p>The &lt;strong> element is for content that is of "strong importance," including things of great seriousness or urgency (such as warnings). This could be a sentence that is of great importance to the whole page, or you could merely try to point out that some words are of greater importance compared to nearby content.Typically this element is rendered by default using a bold font weight. However it's not the same as using bold styling or &lt;b> tag.</p>
+    
+    <header><h3>Example-</h3></header>
+    <code class="language-html">
+      &lt;p>In &lt;strong>HTML 5&lt;/strong>, what was previously called &lt;em>block-level&lt;/em> content is now called &lt;em>flow&lt;/em> content.&lt;/p>
+    </code>
+    
+    <div class="result">
+      <p>In <strong>HTML 5</strong>, what was previously called <em>block-level</em> content is now called <em>flow</em> content.</p>
+    </div>   
+  </section>
+    
+  <section>
+    <header><h2>Reference</h2></header>
+    
+    <p>Complete documentation has been taken from <a href="https://devdocs.io/">DevDocs</a>.</p>
+  </section>
+</main>
+  </body>
+</html>
